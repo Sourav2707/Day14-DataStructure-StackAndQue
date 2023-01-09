@@ -7,5 +7,8 @@ public class Main {
         stack.uc1_push(30);
         stack.uc1_push(56);
         stack.get();
+        stack.uc2_peek();
+        stack.uc2_pop();
+        stack.get();
     }
 }

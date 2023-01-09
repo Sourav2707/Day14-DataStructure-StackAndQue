@@ -16,6 +16,24 @@ public class Day14_Stack {
         this.top = node;
         System.out.println(value+" pushed to stack ");
     }
+    public void uc2_peek() //peek will show the top data
+    {
+        if (this.top == null)
+        {
+            System.out.println("\nStack is empty");
+            return;
+        }
+        System.out.println(top.data+" is in the top of the stack ");
+    }
+    public void uc2_pop() {
+        if (this.top == null)
+        {
+            System.out.println("\nStack is empty, Deletion is not possible");
+            return;
+        }
+        System.out.println("\nValue popped is "+this.top.data);
+        this.top = this.top.next;
+    }
     public void get()
     {
         Node temp = this.top;
