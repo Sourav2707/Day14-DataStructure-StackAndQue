@@ -9,10 +9,10 @@ public class Day14_Stack {
     public void uc1_push(int value)
     {
         Node node = new Node(value);
-        if (this.top == null)
+        if (this.top == null) //if top is null then it is null
             node.next = null;
         else
-            node.next = this.top;
+            node.next = this.top; //else top is fed to node's next
         this.top = node;
         System.out.println(value+" pushed to stack ");
     }
